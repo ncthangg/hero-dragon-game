@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Item
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Ground
+  - Wall
+  - Background
+  - Foreground
+  - Trap
+  - Item
+  - ButtonUI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: GridMap
+    uniqueID: 3730975711
+    locked: 0
+  - name: Background
+    uniqueID: 3014670045
+    locked: 0
+  - name: Foreground
+    uniqueID: 1557853569
+    locked: 0
+  - name: Player
+    uniqueID: 492191711
+    locked: 0
+  - name: Ground
+    uniqueID: 3575642415
+    locked: 0
+  - name: Trap
+    uniqueID: 1419449423
+    locked: 0
+  - name: UI
+    uniqueID: 2613563041
+    locked: 0
+  - name: ButtonUI
+    uniqueID: 1906545105
+    locked: 0
