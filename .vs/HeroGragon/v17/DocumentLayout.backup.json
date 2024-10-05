@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\C\u00F4ng c\u1EE5\\UnityHub\\UnityProject\\HeroGragon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69883D4F-68BA-7123-D91B-EE539B9910A8}|Assembly-CSharp.csproj|d:\\c\u00F4ng c\u1EE5\\unityhub\\unityproject\\herogragon\\assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69883D4F-68BA-7123-D91B-EE539B9910A8}|Assembly-CSharp.csproj|D:\\C\u00F4ng c\u1EE5\\UnityHub\\UnityProject\\HeroGragon\\assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69883D4F-68BA-7123-D91B-EE539B9910A8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69883D4F-68BA-7123-D91B-EE539B9910A8}|Assembly-CSharp.csproj|D:\\C\u00F4ng c\u1EE5\\UnityHub\\UnityProject\\HeroGragon\\assets\\script\\ui\\heathbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69883D4F-68BA-7123-D91B-EE539B9910A8}|Assembly-CSharp.csproj|d:\\c\u00F4ng c\u1EE5\\unityhub\\unityproject\\herogragon\\assets\\script\\ui\\heathbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69883D4F-68BA-7123-D91B-EE539B9910A8}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui\\heathbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,7 +42,8 @@
               "RelativeToolTip": "Assets\\Script\\UI\\HeathBar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T08:53:29.075Z"
+              "WhenOpened": "2024-10-05T08:53:29.075Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,7 +53,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerMovement.cs",
               "ToolTip": "D:\\C\u00F4ng c\u1EE5\\UnityHub\\UnityProject\\HeroGragon\\Assets\\Script\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerMovement.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAYwFEAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAYwFEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T12:55:30.817Z",
               "EditorCaption": ""
