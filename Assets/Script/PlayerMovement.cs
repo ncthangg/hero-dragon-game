@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+    private float jumpCooldownTimer = 1f; // thời gian cooldown giữa mỗi lần nhảy
+    private float nextJumpTime = 0f; // thời gian có thể nhảy tiếp theo
 
     [Header("Sound")]
     [SerializeField] private AudioClip jumpSound;
@@ -57,14 +59,21 @@ public class PlayerMovement : MonoBehaviour
             else
                 body.gravityScale = 5;
 
-            if (Input.GetKey(KeyCode.Space))
+            // Kiểm tra nếu thời gian hiện tại >= thời gian cho phép nhảy tiếp theo
+            if (Time.time >= nextJumpTime)
             {
-                Jump();
-                if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
-                    //SoundManager.instance.PlaySound(jumpSound);
-                    FindObjectOfType<SoundManager>().Play("jump");
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    Jump();
+                    if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
+                    {
+                        // Play sound khi nhảy
+                        FindObjectOfType<SoundManager>().Play("jump");
+                    }
 
-
+                    // Đặt thời gian nhảy tiếp theo bằng thời gian hiện tại + cooldown
+                    nextJumpTime = Time.time + jumpCooldownTimer;
+                }
             }
 
             transform.rotation = Quaternion.Euler(0, 0, 0);

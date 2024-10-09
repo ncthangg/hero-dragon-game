@@ -4202,7 +4202,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281962573}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
@@ -11682,7 +11682,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 2002185736}
   gameOverSound: {fileID: 8300000, guid: 6b4c2e4dff7c7ae49bab566685bd94c6, type: 3}
-  saveManager: {fileID: 0}
   progress: {fileID: 11400000, guid: de4dd782bc865f84db6e1143ebe54226, type: 2}
 --- !u!1 &707848555
 GameObject:
@@ -47034,7 +47033,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786926653}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
@@ -47370,7 +47369,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791724303}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
   m_Name: 
@@ -51310,8 +51309,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 339304643}
-  - {fileID: 580650094}
   - {fileID: 979255562}
+  - {fileID: 580650094}
   - {fileID: 1786926654}
   - {fileID: 281962574}
   - {fileID: 1791724304}
@@ -53190,6 +53189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HeathBar
       objectReference: {fileID: 0}
+    - target: {fileID: 4025326544834063297, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6641987800144304598, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -53270,9 +53273,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6775869139101209096, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8318380528503336491, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
       propertyPath: m_Value
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318380528503336491, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: m_WholeNumbers
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

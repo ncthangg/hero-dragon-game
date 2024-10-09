@@ -5,7 +5,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private AudioClip gameOverSound;
-    public SaveManager saveManager;
+    //public SaveManager saveManager;
     public PlayerProgress progress;
 
     public void GameOver()
