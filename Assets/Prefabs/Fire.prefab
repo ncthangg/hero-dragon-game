@@ -348,6 +348,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireEffect: {fileID: 5588917623750341204}
-  damage: 10
+  damage: 1
   fireRun: 5
   fireDelay: 2

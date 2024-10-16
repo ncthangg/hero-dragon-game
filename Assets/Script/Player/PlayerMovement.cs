@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
-    private float jumpCooldownTimer = 1f; // thời gian cooldown giữa mỗi lần nhảy
+    private float jumpCooldownTimer = 0.5f; // thời gian cooldown giữa mỗi lần nhảy
     private float nextJumpTime = 0f; // thời gian có thể nhảy tiếp theo
 
     [Header("Sound")]

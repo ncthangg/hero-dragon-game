@@ -73,11 +73,11 @@ public class Player : MonoBehaviour
     public void AddHealth(int _value)
     {
         var hearthFuture = currentHealth + _value;
-        if (currentHealth < 100)
+        if (currentHealth < maxHealth)
         {
-            if (hearthFuture > 100)
+            if (hearthFuture > maxHealth)
             {
-                currentHealth = 100;
+                currentHealth = maxHealth;
             }
             else
             {

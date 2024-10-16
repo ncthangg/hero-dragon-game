@@ -26,13 +26,13 @@ public class EndPoint : MonoBehaviour
                 playerAnimator.SetTrigger("win");
             }
 
-            saveManager.CompleteMap(NextMap);
+            saveManager.CompletedMap(NextMap);
 
-            StartCoroutine(WaitAndLoadNextLevel(5f));
+            StartCoroutine(WaitAndLoadNextLevel(3f));
         }
     }
 
-    // Coroutine để đợi 5 giây trước khi gọi NextLv()
+    // Coroutine để đợi ... giây trước khi gọi NextLv()
     private IEnumerator WaitAndLoadNextLevel(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);

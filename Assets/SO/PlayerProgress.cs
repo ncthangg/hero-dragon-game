@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlayerProgress", menuName = "ScriptableObjects/PlayerProgress", order = 1)]
 public class PlayerProgress : ScriptableObject
 {
-    public int lastPlayedMapIndex; // Lưu lại chỉ số của map cuối cùng mà người chơi đã chơi
+    public int lastPlayedMapIndex = 1; // Lưu lại chỉ số của map cuối cùng mà người chơi đã chơi
     private int mapIndexLimit = 3;
     public int GetNowMap()
     {

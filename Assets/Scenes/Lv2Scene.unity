@@ -1111,7 +1111,7 @@ PrefabInstance:
       objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: damage
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: fireDelay
@@ -2870,7 +2870,7 @@ PrefabInstance:
       objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: damage
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: fireDelay
@@ -3778,7 +3778,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.23312923, g: 0.34351605, b: 0.5169811, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4913,7 +4913,7 @@ PrefabInstance:
       objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: damage
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: fireDelay
@@ -7481,14 +7481,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1261244835}
-    - target: {fileID: 1867137846056480896, guid: de68375c5450da1429dfc76a2d7fa294, type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1867137846056480896, guid: de68375c5450da1429dfc76a2d7fa294, type: 3}
-      propertyPath: jumpPower
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 5739584357178216685, guid: de68375c5450da1429dfc76a2d7fa294, type: 3}
       propertyPath: m_Name
       value: Player2
@@ -8368,7 +8360,7 @@ PrefabInstance:
       objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: damage
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: fireDelay
@@ -8660,7 +8652,7 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
+  m_PointLightInnerRadius: 0.19513106
   m_PointLightOuterRadius: 3.875356
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
@@ -8733,7 +8725,7 @@ Transform:
   m_GameObject: {fileID: 1540585993}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.0033495468, w: 0.9999944}
-  m_LocalPosition: {x: 10.498661, y: -0.6391754, z: 0.055961154}
+  m_LocalPosition: {x: 10.68, y: 0.21, z: 0.055961154}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9544,30 +9536,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9990030}
     m_Modifications:
-    - target: {fileID: 632505489471486534, guid: 19c79adfeddf265428200100d879b245, type: 3}
-      propertyPath: m_RenderingLayerMask
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 632505489471486534, guid: 19c79adfeddf265428200100d879b245, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
-      propertyPath: damage
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7547324638320489046, guid: 19c79adfeddf265428200100d879b245, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.23778835
-      objectReference: {fileID: 0}
-    - target: {fileID: 7547324638320489046, guid: 19c79adfeddf265428200100d879b245, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.19888625
-      objectReference: {fileID: 0}
-    - target: {fileID: 7547324638320489046, guid: 19c79adfeddf265428200100d879b245, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 7547324638320489046, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1135519
@@ -9640,7 +9608,7 @@ PrefabInstance:
       objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: damage
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7547324638320489046, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: m_LocalScale.x
@@ -32388,7 +32356,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.3882353, g: 0.057864446, b: 0, a: 1}
+  m_Color: {r: 0.41960785, g: 0.057864446, b: 0, a: 1}
   m_Origin: {x: -10, y: -37, z: 0}
   m_Size: {x: 59, y: 37, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -32670,7 +32638,7 @@ PrefabInstance:
       objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: damage
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7547324638320489046, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: m_LocalScale.x
@@ -35637,7 +35605,7 @@ PrefabInstance:
       objectReference: {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: damage
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5133489034536942180, guid: 19c79adfeddf265428200100d879b245, type: 3}
       propertyPath: fireDelay
@@ -36337,8 +36305,8 @@ SceneRoots:
   - {fileID: 9990030}
   - {fileID: 1619426090}
   - {fileID: 1183940335}
-  - {fileID: 1295860036}
   - {fileID: 695517957}
   - {fileID: 1849117082}
   - {fileID: 1548837633}
   - {fileID: 174475834}
+  - {fileID: 1295860036}
