@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerProgress : ScriptableObject
 {
     public int lastPlayedMapIndex = 1; // Lưu lại chỉ số của map cuối cùng mà người chơi đã chơi
-    private int mapIndexLimit = 3;
+    private int mapIndexLimit = 4;
     public int GetNowMap()
     {
         var currentMap = lastPlayedMapIndex;
@@ -14,9 +14,9 @@ public class PlayerProgress : ScriptableObject
     public int GetNextMap()
     {
         var nextMap = lastPlayedMapIndex + 1;
+        Debug.Log("Next Map - " + nextMap);
         if (nextMap < mapIndexLimit)
         {
-            Debug.Log("Next Map - " + nextMap);
             return nextMap;
         }
         else

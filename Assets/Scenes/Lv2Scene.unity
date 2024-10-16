@@ -8100,10 +8100,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5426539815778875792, guid: 769be88cd49f9d2458401a4e67b7b879, type: 3}
-      propertyPath: progress
-      value: 
-      objectReference: {fileID: 11400000, guid: de4dd782bc865f84db6e1143ebe54226, type: 2}
-    - target: {fileID: 5426539815778875792, guid: 769be88cd49f9d2458401a4e67b7b879, type: 3}
       propertyPath: saveManager
       value: 
       objectReference: {fileID: 925692294}
@@ -33307,11 +33303,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6333463838959650548, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.77
+      value: -3.62
       objectReference: {fileID: 0}
     - target: {fileID: 6333463838959650548, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.84
+      value: -26.76
       objectReference: {fileID: 0}
     - target: {fileID: 6333463838959650548, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
       propertyPath: m_LocalPosition.z

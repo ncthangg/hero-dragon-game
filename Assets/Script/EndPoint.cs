@@ -6,11 +6,10 @@ using UnityEngine.SceneManagement;
 public class EndPoint : MonoBehaviour
 {
     public SaveManager saveManager;
-    public PlayerProgress progress;
     private int NextMap;
     void Start()
     {
-        NextMap = progress.GetNextMap();
+        NextMap = saveManager.playerProgress.GetNextMap();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
