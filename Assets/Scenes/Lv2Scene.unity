@@ -947,7 +947,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: dfc3d220e2ba0914bb9f1028536eae06, type: 3}
     source: {fileID: 0}
   - name: music
-    clip: {fileID: 8300000, guid: 6b4c2e4dff7c7ae49bab566685bd94c6, type: 3}
+    clip: {fileID: 8300000, guid: 0297327b14f2ec043a5232a5ec016117, type: 3}
     source: {fileID: 0}
   - name: hurt
     clip: {fileID: 8300000, guid: 61017b31f07db7242bb3c8a24fa83a47, type: 3}
@@ -33300,6 +33300,10 @@ PrefabInstance:
     - target: {fileID: 5739584357178216685, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
       propertyPath: m_Name
       value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739584357178216685, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6333463838959650548, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
       propertyPath: m_LocalPosition.x

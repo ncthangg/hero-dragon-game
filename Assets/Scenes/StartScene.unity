@@ -796,7 +796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 9.6}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -464.55, y: 497.67}
+  m_AnchoredPosition: {x: -195, y: 474}
   m_SizeDelta: {x: 11.1, y: 14.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480405704
@@ -813,7 +813,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 0}
   gameOverSound: {fileID: 8300000, guid: 6b4c2e4dff7c7ae49bab566685bd94c6, type: 3}
-  saveManager: {fileID: 223714237}
   progress: {fileID: 11400000, guid: de4dd782bc865f84db6e1143ebe54226, type: 2}
 --- !u!114 &1480405705
 MonoBehaviour:
@@ -1147,7 +1146,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: dfc3d220e2ba0914bb9f1028536eae06, type: 3}
     source: {fileID: 0}
   - name: music
-    clip: {fileID: 8300000, guid: 6b4c2e4dff7c7ae49bab566685bd94c6, type: 3}
+    clip: {fileID: 8300000, guid: 0297327b14f2ec043a5232a5ec016117, type: 3}
     source: {fileID: 0}
   - name: hurt
     clip: {fileID: 8300000, guid: 61017b31f07db7242bb3c8a24fa83a47, type: 3}
@@ -1177,7 +1176,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6b4c2e4dff7c7ae49bab566685bd94c6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0297327b14f2ec043a5232a5ec016117, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -11,7 +11,7 @@ public class TrapDamage : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<Player>().TakeDame(damage);
+            collision.GetComponent<Player>().TakeDame(3);
         }
 
         Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();

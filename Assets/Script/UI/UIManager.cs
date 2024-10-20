@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         //SoundManager.instance.PlaySound(gameOverSound);
-        FindObjectOfType<SoundManager>().Play("music");
+        //FindObjectOfType<SoundManager>().Play("music");
     }
     public void StartGame()
     {

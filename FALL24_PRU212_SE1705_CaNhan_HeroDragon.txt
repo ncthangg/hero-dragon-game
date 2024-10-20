@@ -1,0 +1,140 @@
+Nguồn:
+https://youtube.com/playlist?list=PLgOEwFbvGm5o8hayFB6skAfa8Z-mw4dPV&si=EULSHEHYBVJH-7eN
+
+Ánh Sáng: 
+https://youtu.be/-gzw_DHfoKU?si=K5cQSM-AvXb3h7RJ
+
+
+Animator: PlayerMovement
+
+Lật khi di chuyển
+        // lật khi chuyển hướng trái/phải
+        if (horizontalInput > 0.01f)
+            transform.localScale = Vector3.one;
+        else if (horizontalInput < -0.1f)
+            transform.localScale = new Vector3(-1, 1, 1);
+
+Nhảy
+ void Jump()
+    {
+
+        if (isGrounded())
+        {
+            body.velocity = new Vector2(body.velocity.x, jumpPower);
+            animator.SetTrigger("jump");
+        }
+    }
+
+Tấn công
+    private void Attack()
+    {
+
+        //SoundManager.instance.PlaySound(attackSound);
+        FindObjectOfType<SoundManager>().Play("fireball");
+
+        animator.SetTrigger("attack");
+        cooldownTimer = 0;
+
+        SpawnFireball();
+    }
+
+Tạo fireball
+
+    private void SpawnFireball()
+    {
+        // Instantiate a new fireball at the firePoint position
+        GameObject newFireball = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
+
+        // Set direction or any other properties here
+        newFireball.GetComponent<Projectile>().SetDirection(Math.Sign(transform.localScale.x));
+
+    }
+Hurt + Health: Player
+
+Nhận Dame: 
+
+public void TakeDame(int damage)
+if (currentHealth > 0)
+        currentHealth -= damage;
+        {
+            //SoundManager.instance.PlaySound(hurtSound);
+            FindObjectOfType<SoundManager>().Play("hurt");
+
+            anim.SetTrigger("hurt");
+            healthBar.SetHealth(currentHealth);
+
+            StartCoroutine(Invunerability());
+        }
+
+Cộng máu: 
+
+public void AddHealth(int _value)
+    {
+        var hearthFuture = currentHealth + _value;
+        if (currentHealth < maxHealth)
+        {
+            if (hearthFuture > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+            else
+            {
+                currentHealth += _value;
+                healthBar.SetHealth(currentHealth);
+            }
+        }
+    }
+
+
+-FireTrap:
+
++ Phun lửa theo chu kì:
+    private IEnumerator FireRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(fireDelay);
+            // Bắt đầu phun lửa
+            fireEffect.SetActive(true);
+            isFiring = true;
+
+            yield return new WaitForSeconds(fireRun);
+            // Dừng phun lửa
+            fireEffect.SetActive(false);
+            isFiring = false;
+        }
+    }
+
++ Va chạm
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        Debug.Log("va cham");
+        if (isFiring && collision.tag == "Player")
+        {
+            collision.GetComponent<Player>().TakeDame(damage);
+            Debug.Log("nhan dame");
+        }
+    }
+
+-SawTrap:
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<Player>().TakeDame(damage);
+        }
+
+        Rigidbody2D playerRb = collision.GetComponent<Rigidbody2D>();
+        if (playerRb != null)
+        {
+            // Tính toán hướng đẩy ngược lại với hướng mà Player đang đối diện
+            float playerDirection = Mathf.Sign(collision.transform.localScale.x); // Lấy hướng mà Player đang đối diện (1 hoặc -1)
+            Debug.Log(playerDirection);
+            // Áp dụng lực đẩy theo hướng ngược lại
+            Vector2 knockback = new Vector2(playerDirection * lucDay * 0.5f, lucDay * 0.5f); // Lực đẩy ngược lại và một chút hướng lên trên
+            playerRb.AddForce(knockback, ForceMode2D.Impulse); // Apply impulse force
+            Debug.Log("da day lui");
+        }
+    }
+
+-

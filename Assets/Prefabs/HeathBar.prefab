@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1681404255
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2f1852a3683e64741a0399d4aafae28c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -192,14 +192,14 @@ MonoBehaviour:
     serializedVersion: 2
     key0: {r: 1, g: 0.009433806, b: 0.009433806, a: 1}
     key1: {r: 1, g: 0.9080803, b: 0, a: 1}
-    key2: {r: 0.015723169, g: 1, b: 0.111345045, a: 0}
+    key2: {r: 0.021181887, g: 0.3962264, b: 0.07687348, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 14135
-    ctime1: 36109
+    ctime0: 32896
+    ctime1: 64880
     ctime2: 65535
     ctime3: 0
     ctime4: 0

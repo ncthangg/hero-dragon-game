@@ -1359,7 +1359,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: dfc3d220e2ba0914bb9f1028536eae06, type: 3}
     source: {fileID: 0}
   - name: music
-    clip: {fileID: 8300000, guid: 6b4c2e4dff7c7ae49bab566685bd94c6, type: 3}
+    clip: {fileID: 8300000, guid: 0297327b14f2ec043a5232a5ec016117, type: 3}
     source: {fileID: 0}
   - name: hurt
     clip: {fileID: 8300000, guid: 61017b31f07db7242bb3c8a24fa83a47, type: 3}
@@ -4286,7 +4286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!114 &281962576
 MonoBehaviour:
@@ -5000,6 +5000,10 @@ PrefabInstance:
     - target: {fileID: 5739584357178216685, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
       propertyPath: m_Name
       value: Player1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5739584357178216685, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6333463838959650548, guid: 5a700ba8113294e4d95a22ec8f3fcb94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9777,7 +9781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!114 &580650096
 MonoBehaviour:
@@ -11820,7 +11824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 2002185736}
-  gameOverSound: {fileID: 8300000, guid: 6b4c2e4dff7c7ae49bab566685bd94c6, type: 3}
+  gameOverSound: {fileID: 8300000, guid: 0297327b14f2ec043a5232a5ec016117, type: 3}
   progress: {fileID: 11400000, guid: de4dd782bc865f84db6e1143ebe54226, type: 2}
 --- !u!1 &707848555
 GameObject:
@@ -15498,6 +15502,7 @@ GameObject:
   - component: {fileID: 909512451}
   - component: {fileID: 909512450}
   - component: {fileID: 909512452}
+  - component: {fileID: 909512453}
   m_Layer: 6
   m_Name: ground
   m_TagString: Untagged
@@ -16655,6 +16660,49 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!68 &909512453
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909512448}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -15.049989, y: -23.929646}
+  - {x: -15.013837, y: -23.951336}
+  - {x: 19.49501, y: -23.93548}
+  - {x: 49.011234, y: -23.899647}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &922199271
 GameObject:
   m_ObjectHideFlags: 0
@@ -47186,7 +47234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!114 &1786926656
 MonoBehaviour:
@@ -47522,7 +47570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 5, y: 5}
+  m_EffectDistance: {x: 2, y: 2}
   m_UseGraphicAlpha: 1
 --- !u!114 &1791724306
 MonoBehaviour:
@@ -53240,7 +53288,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 510657946831252619, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
       propertyPath: m_SortingLayer
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 510657946831252619, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
       propertyPath: m_SortingOrder
@@ -53265,6 +53313,50 @@ PrefabInstance:
     - target: {fileID: 1371582754395649117, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
       propertyPath: m_Name
       value: HeathBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.ctime0
+      value: 1671
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.ctime1
+      value: 64507
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.ctime2
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key0.b
+      value: 0.009433806
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key0.g
+      value: 0.009433806
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key1.g
+      value: 0.9080803
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key2.b
+      value: 0.111345045
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key2.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3444006074906421121, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
+      propertyPath: gradient.key2.r
+      value: 0.015723169
       objectReference: {fileID: 0}
     - target: {fileID: 4025326544834063297, guid: 2eb90a226f26adc41ac4cdad491be7d0, type: 3}
       propertyPath: m_IsActive
